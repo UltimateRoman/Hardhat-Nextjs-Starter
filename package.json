@@ -1,0 +1,29 @@
+{
+  "name": "starter-kit",
+  "version": "1.0.0",
+  "description": "A starter kit for Hardhat + Next.js DApps",
+  "scripts": {
+    "accounts": "npm run accounts -w @starter-kit/hardhat",
+    "node": "npm run node -w @starter-kit/hardhat",
+    "clean": "npm run clean -w @starter-kit/hardhat",
+    "compile": "npm run compile -w @starter-kit/hardhat",
+    "coverage": "npm run coverage -w @starter-kit/hardhat",
+    "test": "npm run test -w @starter-kit/hardhat",
+    "verify": "npm run verify -w @starter-kit/hardhat",
+    "dev": "npm run dev -w @starter-kit/next-app",
+    "build": "npm run build -w @starter-kit/next-app",
+    "start": "npm run start -w @starter-kit/next-app",
+    "lint": "npm run lint -w @starter-kit/next-app"
+  },
+  "author": "UltimateRoman",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/hardhat",
+      "**/hardhat/**"
+    ]
+  }
+}
